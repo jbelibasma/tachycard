@@ -1,0 +1,127 @@
+#users,
+#new_users,
+#update_users,
+#account,
+#account_cards {
+    position: relative;
+    max-width: 60%;
+    min-width: 600px;
+    border: 3px solid #DE632C;
+    background: #FFF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px 30px 30px;
+    box-sizing: border-box;
+    margin: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0);
+}
+
+
+#list_users {
+    max-height: 420px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 9px;
+    border-radius: 5px;
+  
+}
+
+#list_users .item {
+    display: table-row;
+    box-sizing: border-box;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#list_users .item:hover {
+    background: #FFB90B;
+    color: #FFF;
+}
+
+#list_users .item .cell {
+    display: table-cell;
+    padding: 3px 7px 3px 7px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#account_cards_list {
+
+}
+
+#account_cards {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+
+#account_cards_list .card {
+    position: relative;
+    background: #FFF;
+    border: 1px solid #D65E28;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+#account_cards_list .card .centre {
+
+}
+
+#account_cards_list .card .boitier {
+    color: #000;
+    font-family: open_sansbold, sans-serif;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+#account_cards_list .card .date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 3px;
+    background: #D65E28;
+    color: #FFF;
+    padding: 5px 10px 5px 10px;
+    font-family: open_sansbold, sans-serif;
+    font-size: 13px;
+}
+
+#account_cards_list .card .indication {
+
+}
+.checkboxUserStyleDiv{
+    display: flex;
+}
+
+.checkboxUserStyleInput{
+    width: auto;
+}
+
+#users, #new_users, #update_users, #account, #account_cards {
+    position: relative;
+    max-width: 60%;
+    min-width: 600px;
+    border: 3px solid #ffb90b;
+    background: #FFF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px 30px 30px;
+    box-sizing: border-box;
+    margin: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0);
+  
+  }
+  

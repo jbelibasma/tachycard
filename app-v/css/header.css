@@ -1,0 +1,42 @@
+#header {
+    position: relative;
+    /*top: 0;
+    left: 0;*/
+    box-sizing: border-box;
+    /*background: #D65E28;*/
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#header .logo {
+    width: 250px;
+    padding: 20px;
+}
+
+#btn_menu {
+    position: fixed;
+    top: 17px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#btn_menu .label {
+    font-family: open_sansbold, sans-serif;
+    font-size: 10px;
+    color: #DE632C;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+#btn_menu .icon {
+    width: 40px;
+    height: 40px;
+}

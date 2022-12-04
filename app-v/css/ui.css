@@ -1,0 +1,32 @@
+@keyframes loadBall {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loadBall {
+    display: inline-block;
+    margin: 10px;
+    animation-name: loadBall;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    /*border-radius: 50%;
+    border: 3px solid;
+    border-top-color: #DE632C;
+    border-left-color: rgba(222, 99, 44, 0.79);
+    border-right-color: rgba(222, 99, 44, 0.54);
+    border-bottom-color: rgba(222, 99, 44, 0.25);*/
+    box-sizing: border-box;
+    background-image: url("../images/boomerang.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}

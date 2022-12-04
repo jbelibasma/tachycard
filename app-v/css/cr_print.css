@@ -1,0 +1,249 @@
+#cr_print {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #EFEFEF;
+    opacity: 0;
+    transition: 0.2s;
+    pointer-events: none;
+  }
+  
+#cr_print.visible {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 9999;
+}
+
+#cr_print .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+#cr_print .content {
+    position: relative;
+    font-family: open_sansregular, sans-serif;
+    font-size: 10pt;
+    width: 800px;
+    background: #FFFFFF;
+    border-radius: 3mm;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    padding: 10mm;
+    box-sizing: border-box;
+    height: 840px;
+    overflow-y: scroll;
+  }
+#cr_print .content .bloc.head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cr_print .content .bloc.centre {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#cr_print .content .bloc.centre .subbloc {
+    margin-right: 8mm;
+    flex: 1;
+}
+
+#cr_print .content .bloc.head .logo {
+    font-family: open_sanscondbold, sans-serif;
+    font-size: 50px;
+}
+
+#cr_print .content .bloc.head .title {
+    font-family: open_sansbold,sans-serif;
+    font-size: 16px;
+    text-align: right;
+}
+
+#cr_print .content .bloc.head .title .bigger {
+    font-size: 20px;
+}
+
+
+#cr_print .content .bloc {
+    width: 100%;
+    display: block;
+}
+
+#cr_print .content .bloc .subbloc {
+    margin-top: 8mm;
+    width: fit-content;
+}
+
+
+#cr_print .content .bloc .subbloc .bloc_title {
+    font-size: 9pt;
+    font-family: open_sansbold, sans-serif;
+    color: #888888;
+    margin-left: 3mm;
+    text-transform: uppercase;
+}
+
+#cr_print .content .bloc .subbloc .item {
+    border: 1px solid #888888;
+    border-radius: 2mm;
+    padding: 3mm 5mm 3mm 5mm;
+    box-sizing: border-box;
+}
+
+#cr_print .content .bloc .subbloc .item .label {
+    color: #888888;
+    font-family: open_sansbold, sans-serif;
+    font-size: 10pt;
+}
+
+#cr_print .content .bloc .subbloc .item .value {
+    /*white-space: nowrap;*/
+}
+
+
+#cr_print .content .main_bloc_materiel {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 8mm;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#cr_print .content .main_bloc_materiel .col {
+    /*border: 1px solid #F00;*/
+}
+
+#cr_print .content .main_bloc_materiel .col.materiels {
+    width: 150mm;
+}
+
+#cr_print .content .main_bloc_materiel .title {
+    color: #888888;
+    text-transform: uppercase;
+    font-family: open_sansbold, sans-serif;
+    font-size: 9pt;
+    margin-left: 3mm;
+}
+
+#cr_print .content .bloc.materiel {
+    border: 1px solid #888888;
+    border-radius: 3mm;
+    padding: 3mm 5mm 3mm 5mm;
+    margin-top: 3mm;
+    box-sizing: border-box;
+}
+
+#cr_print .content .bloc.materiel .item {
+    display: flex;
+    align-items: center;
+}
+
+#cr_print .content .bloc.materiel .item .label {
+    color: #888888;
+    font-family: open_sansbold, sans-serif;
+    font-size: 10pt;
+}
+
+#cr_print .content .bloc.materiel .item .value {
+    white-space: nowrap;
+    margin-left: 2mm;
+    display: flex;
+    align-items: center;
+}
+
+#cr_print .content .bloc.materiel .item .value.type {
+    font-family: open_sansbold, sans-serif;
+    text-transform: uppercase;
+    margin-left: 0;
+}
+
+
+#cr_print .icon_irm {
+    width: 6mm;
+    margin-left: 2mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cr_print .icon_irm img {
+    width: 7mm;
+}
+
+
+#cr_print .content .col.qr_code {
+    margin-left: 10mm;
+}
+
+
+#cr_print button.print_cr {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+#qr_code{
+    margin-top: 5mm;
+    width: 300px;
+    height: 300px;
+}
+
+/*
+    FOR PRINTING
+    ------------------------------------
+*/
+@media print {
+
+    @page  {
+        size: 210mm 297mm;
+        margin: 0;
+    }
+
+    body.print_cr {
+        width: 210mm!important;
+        height: 297mm!important;
+        margin:0;
+        padding:0;
+    }
+
+    #cr_print {
+        position: relative;
+        background: transparent;
+        width: 210mm;
+        height: 280mm;
+        overflow: hidden;
+    }
+
+    #cr_print .content {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    #cr_print .close { display: none;}
+    #cr_print button.print_cr { display: none; }
+
+    #qr_code{
+        margin-top: 5mm;
+        width: 40mm;
+        height: 40mm;
+    }
+
+    #qr_code_clear {
+        margin-top: 43mm;
+    }
+
+}

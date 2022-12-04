@@ -1,0 +1,46 @@
+#material,
+#new_materials {
+    position: relative;
+    width: 900px;
+    border: 3px solid #DE632C;
+    background: #FFF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px 30px 30px;
+    box-sizing: border-box;
+    margin: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0);
+}
+
+
+#list_materiel {
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#list_materiel .item {
+    display: table-row;
+    box-sizing: border-box;
+}
+
+#list_materiel .item .cell {
+    display: table-cell;
+    padding: 3px 7px 3px 7px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#list_materiel .icon_irm {
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c358c759-6508-4d21-87cc-768c7cb3a983" name="server 1" url="http://server1.neore.fr">
+        <fileTransfer rootFolder="/www/uluru" accessType="SFTP" host="server1.neore.fr" port="22" sshConfigId="889dd519-1b57-4e57-9599-369ba8be41b4" sshConfig="server 1">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

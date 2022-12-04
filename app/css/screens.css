@@ -1,0 +1,121 @@
+
+#app .screen {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 915px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-150vw);
+    transition: 0.35s;
+}
+  
+
+#app .screen.visible {
+    transform: translateX(0);
+}
+
+#app .screen.hide {
+    display: none;
+}
+
+
+#app .screen .screen_icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+}
+
+#app .screen .title {
+    font-family: "Poppins", Helvetica, sans-serif;
+    color: #b9b9b9;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 10px;
+  }
+
+#app .screen .title {
+    font-family: "Poppins", Helvetica, sans-serif;
+    color: #686868;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 40px;
+}
+
+#app .screen .search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 300px;
+  
+}
+
+.two-element-side-by-side {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .flex-grow {
+    flex-grow: 1;
+  }
+
+#app .screen .buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#app .screen .buttons.noMargin {
+    margin-top: 0;
+   
+  }
+  
+
+  #app .screen .buttons button {
+ 
+    height: 35;
+    font-size: 14px;
+  }
+
+  button#boitier_indication_Pacemaker_bt {
+    font-family: "Poppins", Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #ffb90b 5%, #ffb90b 100%);
+    border: 1px solid #fff;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    padding: 7px 25px;
+    text-decoration: none;
+    border-radius: 1px !important;
+}
+
+button#boitier_indication_Défibrillateur_bt {
+    font-family: "Poppins", Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #ffb90b 5%, #ffb90b 100%);
+    border: 1px solid #fff;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    padding: 4px 25px;
+    text-decoration: none;
+    border-radius: 1px !important;
+}
+
+button#boitier_indication_Holter_SC_bt {
+    font-family: "Poppins", Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #ffb90b 5%, #ffb90b 100%);
+    border: 1px solid #fff;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    padding: 7px 25px;
+    text-decoration: none;
+    border-radius: 1px !important;
+}

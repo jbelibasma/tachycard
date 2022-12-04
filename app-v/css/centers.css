@@ -1,0 +1,49 @@
+#centers,
+#new_centers,
+#update_centers {
+    position: relative;
+    width: 700px;
+    border: 3px solid #DE632C;
+    background: #FFF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px 30px 30px;
+    box-sizing: border-box;
+    margin: 30px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0);
+}
+
+
+#list_centers {
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#list_centers .item {
+    display: table-row;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+#list_centers .item:hover {
+    background: #DE632C;
+    color: #FFF;
+}
+
+#list_centers .item .cell {
+    display: table-cell;
+    padding: 3px 7px 3px 7px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+

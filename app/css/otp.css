@@ -1,0 +1,32 @@
+#otp_lost_pass {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#D65E28, #333);
+    z-index: 100;
+    pointer-events: none;
+}
+#otp_lost_pass.visible {
+    display: flex;
+    pointer-events: all;
+}
+
+#otp_lost_pass .logo {
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+#otp_lost_pass form label {
+    color: rgba(255,255,255,0.5);
+}
+
+#otp_lost_pass form button {
+    border: 1px solid #FFF;
+}
+

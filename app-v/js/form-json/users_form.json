@@ -1,0 +1,107 @@
+{
+  "form": {
+    "id": "update_user_form",
+    "content": {
+      "id": {
+        "inputType": "input",
+        "type": "hidden",
+        "value": ""
+      },
+      "destination": {
+        "inputType": "input",
+        "type": "hidden",
+        "value": ""
+      },
+      "nom": {
+        "label": "Nom",
+        "inputType": "input",
+        "type": "text",
+        "value": ""
+      },
+      "prenom": {
+        "label": "Prénom",
+        "inputType": "input",
+        "type": "text",
+        "value": ""
+      },
+      "email": {
+        "label": "Email",
+        "inputType": "input",
+        "type": "text",
+        "value": ""
+      },
+      "tel": {
+        "label": "Téléphone",
+        "inputType": "input",
+        "type": "tel",
+        "value": ""
+      },
+      "pass1": {
+        "label": "Mot de passe",
+        "inputType": "input",
+        "type": "password",
+        "value": "",
+        "placeholder": "Changer le mot de passe"
+      },
+      "sexe": {
+        "label": "Sexe",
+        "inputType": "select",
+        "options": ["Femme","Homme","Autre"],
+        "value": ""
+      },
+      "type": {
+        "label": "Type de comtpe",
+        "inputType": "select",
+        "options": ["","Patient","Médecin","Administrateur"],
+        "value": ""
+      },
+
+      "user_mat_ab": {
+        "label": "Sonde abandonnée",
+        "inputType": "input",
+        "type": "checkbox",
+        "class": "checkboxUserStyleInput",
+        "id": "update_user_mat_ab_id",
+        "text": "Le patient est-il porteur d'une sonde abandonnée ?"
+      },
+      "user_data": {
+        "label": "Données personnelles",
+        "inputType": "input",
+        "type": "checkbox",
+        "id": "user_data_id",
+        "class": "checkboxUserStyleInput",
+        "text":"En créant le compte de ce patient vous certifiez que ce dernier a bien été informé et accepte sans réserve l'enregistrement de ses données personnelles et les conditions annexes à cet enregistrement."
+      },
+      "buttons": {
+        "bt_cancel": {
+          "inputType": "button",
+          "type": "button",
+          "class": "bt_cancel",
+          "btClick": "uluru.loadStateOfFront()",
+          "text": "Annuler"
+        },
+
+        "delete": {
+          "inputType": "button",
+          "type": "button",
+          "class": "delete",
+          "text": "Supprimer"
+        },
+
+        "update": {
+          "inputType": "button",
+          "type": "button",
+          "class": "update",
+          "text": "Valider"
+        },
+
+        "create": {
+          "inputType": "button",
+          "type": "button",
+          "class": "create",
+          "text": "Créer"
+        }
+      }
+    }
+  }
+}

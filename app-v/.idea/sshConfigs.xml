@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="server1.neore.fr" id="889dd519-1b57-4e57-9599-369ba8be41b4" port="22" customName="server 1" nameFormat="CUSTOM" username="laurent">
+        <option name="customName" value="server 1" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

@@ -1,0 +1,53 @@
+#find_card .message {
+    color: #8B8B8B;
+    text-align: center;
+    font-family: open_sansregular, sans-serif;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+
+#list_cards {
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: none;
+}
+
+#list_cards.visible {
+    display: block;
+}
+
+#list_cards .item {
+    display: table-row;
+    box-sizing: border-box;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#list_cards .item.header {
+    font-family: open_sansbold,sans-serif;
+}
+
+#list_cards .item.header:hover {
+    background: transparent;
+    color: initial;
+    cursor: auto;
+}
+
+#list_cards .item:hover {
+    background: #DE632C;
+    color: #FFF;
+}
+
+#list_cards .item .cell {
+    display: table-cell;
+    padding: 5px 10px 5px 10px;
+    vertical-align: middle;
+    white-space: nowrap;
+}

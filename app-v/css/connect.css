@@ -1,0 +1,41 @@
+#connect {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#D65E28, #333);
+    z-index: 100;
+    pointer-events: none;
+}
+
+#connect.visible {
+    display: flex;
+    pointer-events: all;
+}
+
+#connect .logo {
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+#connect form label {
+    color: rgba(255,255,255,0.5);
+}
+
+#connect form button {
+    border: 1px solid #FFF;
+}
+
+#connect .lost {
+    text-align: center;
+    color: #EEE;
+    margin-top: 20px;
+    font-size: 12px;
+    font-family: open_sansbold, sans-serif;
+    cursor: pointer;
+}

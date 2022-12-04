@@ -1,0 +1,11 @@
+@import "carte_print.css";
+@import "cr_print.css";
+@import url("fonts.css");
+
+
+#main,
+#app,
+#notification,
+#loading {
+    display: none;
+}
